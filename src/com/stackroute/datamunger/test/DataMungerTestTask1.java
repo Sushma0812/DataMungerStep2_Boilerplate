@@ -128,7 +128,7 @@ public class DataMungerTestTask1 {
 				orderByFields);
 
 		queryString = "select city,winner,team1 from ipl.csv order by winner";
-		orderByFields.clear();
+		//orderByFields.clear();
 		orderByFields = queryParameter.getOrderByFields();
 
 		assertNotEquals(
