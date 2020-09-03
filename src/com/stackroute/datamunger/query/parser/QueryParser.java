@@ -201,11 +201,11 @@ public class QueryParser {
 
 		LinkedList<String>logicalOperators=new LinkedList<String>();
 
-		String small=queryString.trim().toLowerCase();
-		String[]here=small.split(" where ");
-		if(here.length==1)return null;
+		String lowerCase=queryString.trim().toLowerCase();
+		String[]strings=lowerCase.split(" where ");
+		if(strings.length==1)return null;
 
-		String[]arrayOne= here[1].split(" ");
+		String[]arrayOne= strings[1].split(" ");
 
 		for(int i=0;i<arrayOne.length;i++)
 		{
